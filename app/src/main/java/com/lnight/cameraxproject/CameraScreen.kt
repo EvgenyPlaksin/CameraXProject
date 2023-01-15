@@ -74,7 +74,7 @@ fun CameraScreen(
     }
 
     when {
-        permissionState.permissions.first().status.isGranted -> {
+        permissionState.allPermissionsGranted -> {
 
         Box(
             modifier = Modifier.fillMaxSize()
